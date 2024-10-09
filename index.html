@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Model</title>
+    <link rel="shortcut icon" href="https://cdn.freelogovectors.net/wp-content/uploads/2024/02/gemini_logo-chatbot-freelogovectors.net_.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(14, 13, 13);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            animation: spawnAnimation 2s ease-in-out;
+        }
+
+        @keyframes spawnAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Gemini</h1>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Gemini"
+  chat-icon="https://cdn.freelogovectors.net/wp-content/uploads/2024/02/gemini_logo-chatbot-freelogovectors.net_.png"
+  agent-id="5fb20dcb-b864-4221-adee-2328e17d2977"
+  language-code="en"
+></df-messenger>
+<style>
+    df-messenger {
+     --df-messenger-bot-message: #033aff;
+     --df-messenger-button-titlebar-color: #070707;
+     --df-messenger-chat-background-color: #fafafa;
+     --df-messenger-font-color: white;
+     --df-messenger-send-icon:  #e406f8;
+     --df-messenger-user-message: #6ad15f;
+    }
+  </style>
+</body>
+</html>
